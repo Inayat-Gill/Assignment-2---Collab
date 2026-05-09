@@ -17,3 +17,13 @@ library(palmerpenguins)
 summary(penguins)
 
 ```
+
+## Analysis
+
+This section was added on main. It provides summary table instead of mean calculation.
+
+```{r}
+
+summary(penguins$body_mass)
+
+```
