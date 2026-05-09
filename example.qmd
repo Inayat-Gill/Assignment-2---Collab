@@ -1,0 +1,19 @@
+---
+title: "Example"
+author: "Inayat Gill"
+format: html
+editor: visual
+---
+
+## Introduction
+
+This is a simple quarto document demonstrating HTML output.
+
+```{r}
+
+# A basic R computation
+
+library(palmerpenguins)
+summary(penguins)
+
+```
