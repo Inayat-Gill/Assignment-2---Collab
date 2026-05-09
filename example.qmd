@@ -31,3 +31,21 @@ mean(penguins$body_mass, na.rm = TRUE)
 
 ```
 
+## Visualization
+
+The following plot shows the relationship between body mass and flipper length in the penguins dataset. 
+
+```{r}
+#| label: fig-plot
+#| fig-caption: "Relationship between body mass and flipper length"
+
+library(palmerpenguins)
+plot(penguins$flipper_length_mm, penguins$body_mass_g,
+     xlab = "Flipper Length (mm)",
+     ylab = "Body Mass (g)",
+     main = "Flipper Length vs Body Mass",
+     col = as.factor(penguins$species),
+     pch = 19)
+legend("topleft", legend = levels(as.factor(penguins$species)),
+       col = 1:3, pch = 19)
+```
