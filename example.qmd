@@ -20,10 +20,14 @@ summary(penguins)
 
 ## Analysis
 
-This section was added on main. It provides summary table instead of mean calculation.
+
+This section combines work from both branches. It provides summary table and mean calculation.
 
 ```{r}
 
 summary(penguins$body_mass)
 
+mean(penguins$body_mass, na.rm = TRUE)
+
 ```
+
