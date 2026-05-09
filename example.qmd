@@ -17,3 +17,13 @@ library(palmerpenguins)
 summary(penguins)
 
 ```
+
+## Analysis
+
+This section was added on the test branch. It consists of additional analysis of penguins dataset. 
+
+```{r}
+
+mean(penguins$body_mass, na.rm = TRUE)
+
+```
